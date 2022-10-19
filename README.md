@@ -1,7 +1,7 @@
 # iLand_forest_management
 iLand forest management is a repository in which are published the javascript codes for the implementation of the forest management into the forest landscape and disturbance model - iLand https://iland-model.org/startpage. In particular here are published the JS realised for the CZ case study in Kostelec sorrounding forests
 
-# Simulation testes and design for the "Climate change and browsing by ungulates drive species composition of Central European forests" first CZ, Kostelec forest landscape example!
+Simulation testes and design for the "Climate change and browsing by ungulates drive species composition of Central European forests" first CZ, Kostelec forest landscape example!
 
 Refer this read me to https://orcid.org/my-orcid?orcid=0000-0002-6689-6933 and contact baldo@fld.czu.cz for further informations and explanations.
 
