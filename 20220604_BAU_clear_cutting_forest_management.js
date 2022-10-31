@@ -6,11 +6,11 @@
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
 MARCO BALDO
 2022/04/12
-We have one agent and one unit. 1 and 5 stps
+We have only one agent and 5 stps.
 This selection was done in preprocess (inside R environment).
 Activities that this script is doing:
-Planting
-Thinning x9 x5 stand treatment programs
+Planting x5 stand treatment programs (stps)
+Thinning x9 x5 stps
 clearcut 
  */
 
