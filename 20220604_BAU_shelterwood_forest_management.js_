@@ -3,15 +3,15 @@
 ##########################################################                      Shalterwood Cut                         ########################################################################
                                                                  NEW MANAGEMENT TO INCREASE SPRUCE PROPORTION
                                                                                       TEST SW10
-This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
+This management script is doing businness-as-usual activities on the full landscape of our study area in Kostelec for iLand model.
 MARCO BALDO
 2022/04/12
-We have one agent and one unit. 1sw to 5sw stps
-This selection was done in preprocess (inside R environment).
+We have one agent for 5 Stand Treatment Programs (stps)
 Activities that this script is doing:
-Planting
-Thinning x9 x5 stand treatment programs
+Planting x5 stps
+Thinning x9 per x5 stps
 Shalterwood cut
+Salvaging cut
  */
 
 
@@ -26,7 +26,7 @@ Shalterwood cut
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site. (clear: false)
 
-// STP1 planting_1 = planting for site 1 extreme and expose soils 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
+// STP1 planting_1 = planting for site 1 - extreme and expose soils - 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
 
 
 var planting_1 = {
@@ -40,7 +40,7 @@ var planting_1 = {
     			     	fmengine.log("Planting pisy fraction= 0.2" ); }
 };
 
-// STP2  planting_3 = planting for site 3 acidic soils 40% Quercus petreae L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
+// STP2  planting_3 = planting for site 3 - acidic soils - 40% Quercus petreae L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
 
 
 var planting_3 = {
@@ -54,7 +54,7 @@ var planting_3 = {
     			     	fmengine.log("Planting qupe fraction= 0.4" ); }
 };
 
-// STP3 planting_5 = planting for site 5 rich soils 60% Picea abies L. (Norway sprunce) and 40% Fagus sylvatica L. (European beech).
+// STP3 planting_5 = planting for site 5 - rich soils - 60% Picea abies L. (Norway sprunce) and 40% Fagus sylvatica L. (European beech).
 
 
 var planting_5 = {
@@ -68,7 +68,7 @@ var planting_5 = {
     			     	fmengine.log("Planting fasy fraction= 0.4" ); }
 };
 
-// STP4 planting_7a = planting for site 7a partially waterlock soil 60% Picea abies L. (Norway sprunce) and 40% Quercus petra L. (Sessile oak).
+// STP4 planting_7a = planting for site 7a - partially waterlock soil - 60% Picea abies L. (Norway sprunce) and 40% Quercus petra L. (Sessile oak).
 
 
 var planting_7a = {
@@ -82,7 +82,7 @@ var planting_7a = {
     			     	fmengine.log("Planting qupe fraction= 0.4" ); }
 };
 
-// STP5 planting_7b = planting for site 7b waterlock soil 100% Alnus glutinosa L. (European alder).
+// STP5 planting_7b = planting for site 7b - waterlock soil - 100% Alnus glutinosa L. (European alder).
 
 
 var planting_7b = {
@@ -834,13 +834,13 @@ newAgent: function() { return {  scheduler: this.scheduler }; },
               console.log(stand.flag("group")) ;
 console.log('we should go back to STP1_SW');
 return 'STP1_SW';
-   }; 
+}; 
 
 if  (stand.flag("group")==2) {
 console.log(stand.flag("group")) ;
 console.log('we are in STP2_SW');
     return 'STP2_SW';
-                    };
+};
 
 if (stand.flag("group")==3) {
               console.log(stand.flag("group")) ;
