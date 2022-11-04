@@ -3,8 +3,9 @@ iLand forest management is a repository in which are published the javascript co
 
 Simulation testes and design for the "Climate change and browsing by ungulates drive species composition of Central European forests" first CZ, Kostelec forest landscape example!
 
-Refer this read me to https://orcid.org/my-orcid?orcid=0000-0002-6689-6933 and contact baldo@fld.czu.cz for further informations and explanations.
+The information down to this read me, are mainly notes for the authors purpose and difficult to be understood as they are now. Refer this read me to https://orcid.org/my-orcid?orcid=0000-0002-6689-6933 and contact baldo@fld.czu.cz for further informations and explanations.
 
+____________________________________________________________________________________
 20220307
 
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation per site, stems and volume constarins, sustainableHarvest=1.
@@ -15,7 +16,7 @@ Entire region and 1500y_spinup database used.
 Good results in terms of function and harvest balancing but not in terms of forest stucture cosidering most the species composition.
 Output= carbon, carbon_flows, landscape, dynamicstand, abeUnit, runinfo.
 
-
+____________________________________________________________________________________
 20220307
 
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation per site, 
@@ -27,6 +28,7 @@ Good results in terms of function and harvest balancing but not in terms of fore
 Output= Wind, carbon, carbon_flows, landscape, dynamicstand, abeUnit, svdindicators, runinfo.
 For SW wind was not generated because the absence of the wind dynamics activation for this reason was delated. yes for CC.
 
+____________________________________________________________________________________
 20220314
 
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation per site, 
@@ -39,7 +41,7 @@ butnot in terms of forest stucture cosidering most the species composition (fina
 Windistururbances impact on volume around the 0.1 % and avg volume around 350 m3/ha
 Output= Wind, carbon, carbon_flows, landscape, dynamicstand, abeUnit, runinfo.
 
-
+____________________________________________________________________________________
 20220315
 
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation per site, 
