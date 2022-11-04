@@ -19,12 +19,10 @@ clearcut
 //--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 //                                                 ---       P L A N T I N G  ----
 //
-//  At the input file there are columns with the fractions how planting should be done: PlantPiab	PlantAbal	PlantPisy	PlantFasy	PlantLade	PlantBrLf
-//  Values are summing up to 1.  The last one is BrLf means broadleaf, and distributed into acps (40%), frex(30%) and ulgl(30%). 
-//  Defines a fraction 0-1 of 2x2m pixels for which to plant trees of the given species. The `fraction` is interpreted as a probability, i.e. for each 2x2m pixel a random number decides whether to plant or not.
+/  Defines a fraction 0-1 of 2x2m pixels for which to plant trees of the given species. The `fraction` is interpreted as a probability, i.e. for each 2x2m pixel a random number decides whether to plant or not.
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
-//  We are not clearing the existing tree saplings at the site. (clear: false)
+//  We are not clearing the existing tree saplings at the site.
 
 // STP1 planting_1 = planting for site 1 extreme and expose soils 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
 
@@ -93,6 +91,38 @@ var planting_7b = {
 // Here just doing logging to logfile:
 	 onExit: function() { 	fmengine.log("Planting alql fraction= 1" ); }
 };
+
+
+//--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+//                                                      ---  S A L V A G I N G  --->
+
+
+var salvager_sw = { type: 'salvage',  schedule: { repeat: true },
+     disturbanceCondition: "dbh>10 and rnd(0,1)<"+Globals.setting('user.salvage.remove'),    // this part connect the js at the xml + this +Globals.setting('user.salvage.remove' is for calling where in the modules of the xml)
+     onExecute: function() {
+		 // when stand is cleared... WE DO NOT DO CLEARING
+		 trees.loadAll();
+
+		 trees.harvest("dbh>5"); 
+		  
+                   fmengine.log("Remained after disturbance: " + trees.count + " normal trees");
+                  var n = trees.killSaplings('');
+                  fmengine.log("Plus remained: " + n + " saplings");
+                 //trees.killSaplings("");
+                fmengine.log("We do not do harvest, and clearing, one RESET")
+
+               // fmengine.runActivity(stand.id, "planting"); // assuming the name of the activity is "planting"      
+               //  fmengine.log("PLANTING AFTER RESET");
+		       //stand.trace = true; // enable tracing ...
+			stand.U = 120;   // stand.U is for the rotation time restarting after the salvaging
+	 },
+
+	 debugSplit: false,
+	 thresholdIgnoreDamage: 100, // modified, WR: was 100000  above this threshold clearing and splitting is tested
+	 thresholdClearStand: 1.0,  // This is the % of the demaged area in a stand. We can change it based on what we want. added WR  if the relative damage is higher than this, it is cleared
+	 thresholdSplitStand: 1.0,   // added WR (no splitting=1, if 0.5 at 50% demaged area we split the stand based on demaged - no demaged area)   if this is smaller than the clearstand, it is splitted if rel.damage higher than this value
+
+    }
 
 
 //--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
@@ -629,6 +659,7 @@ var stp1 = { U: [140,140,140], // short/normal/long rotation age --- are ignored
             options: {}, 
 			planting1:  planting_1, 
 			
+	                salvager_sw: salvager_sw,
 			thinning11: thinning11,
 			thinning12: thinning12,
 			thinning13: thinning13,
@@ -659,6 +690,7 @@ var stp2 = { U: [120,120,120], // short/normal/long rotation age --- are ignored
             options: {}, 
 			planting3:  planting_3, 
 			
+	                salvager_sw: salvager_sw,
 			thinning31: thinning31,
 			thinning32: thinning32,
 			thinning33: thinning33,
@@ -689,7 +721,8 @@ fmengine.addManagement(stp2, 'STP2');
 var stp3 = { U: [120,120,120], // short/normal/long rotation age --- are ignored if U is provided in input file  ... we have it in .csv
             options: {}, 
 			planting5:  planting_5, 
-			
+	    
+			salvager_sw: salvager_sw,
 			thinning51: thinning51,
 			thinning52: thinning52,
 			thinning53: thinning53,
@@ -721,6 +754,7 @@ var stp4 = { U: [120,120,120], // short/normal/long rotation age --- are ignored
             options: {}, 
 			planting7a:  planting_7a, 
 			
+	                salvager_sw: salvager_sw,
 			thinning71a: thinning71a,
 			thinning72a: thinning72a,
 			thinning73a: thinning73a,
@@ -751,6 +785,7 @@ var stp5 = { U: [80,80,80], // short/normal/long rotation age --- are ignored if
             options: {}, 
 			planting7b:  planting_7b, 
 			
+	                salvager_sw: salvager_sw,
 			thinning71b: thinning71b,
 			thinning72b: thinning72b,
 			thinning73b: thinning73b,
