@@ -1,5 +1,5 @@
 # iLand_forest_management
-iLand forest management is a repository in which are published the javascript codes for the implementation of the forest management into the forest landscape and disturbance model - iLand https://iland-model.org/startpage. In particular here are published the JS realised for the CZ case study in Kostelec sorrounding forests
+iLand forest management is a repository in which are published the javascript codes for the implementation of the forest management into the forest landscape and disturbance model - iLand https://iland-model.org/startpage. In particular here are published the JS realised for the CZ case study in Kostelec sorrounding forests.
 
 Simulation testes and design for the "Climate change and browsing by ungulates drive species composition of Central European forests" first CZ, Kostelec forest landscape example!
 
@@ -95,7 +95,7 @@ ________________________________________________________________________________
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation based on site, stems and volume constarins, sustainableHarvest=1.
 iLand test for both management system SW and CC 400 years (so transition period). In the simulation ARE present Wind Disturbances (wind_400y.txt) 
 Wind 13 EVENTS in differents directions NE,SE,SO. 3 different directions and same day and intensity. 
-CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES IG TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
+CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES i.e. TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
 Browsing activity is switch off in cc with CZ PNV and on in sw with CZ. 
 Entire region and 1500y_spinup_20220312 database used, without Pseudotsugo menziesii (Mirb.) Franco.
 Increased precipitation 20% <precipitation> = 1.2, variability with Good results * SHOULD BE CHECK* in terms of function and harvest balancing and increasing 
@@ -111,7 +111,7 @@ New management model for Shalterwood to harmonize the volume and harvest fluctua
 iLand test for both management system SW and CC 400 years (so transition period). In the simulation ARE present Wind Disturbances (wind_400y.txt) 
 In the simulation ARE present Bark Beetle Disturbances. 
 Wind 13 EVENTS in differents directions NE,SE,SO. 3 different directions and same day and intensity. 
-CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES IG TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
+CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES i.e. TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
 Browsing activity is switch off in cc and on in sw. 
 Entire region and 1500y_spinup_20220312 database used, without Pseudotsugo menziesii (Mirb.) Franco.
 Increased precipitation 20% <precipitation> = 1.2, variability with Good results * SHOULD BE CHECK* in terms of function and harvest balancing and increasing 
@@ -129,7 +129,7 @@ iLand test for both management system SW and CC 400 years (so transition period)
 In the simulation ARE present Wind Disturbances (wind_400y.txt)
 In the simulation ARE present Bark Beetle Disturbances. 
 Wind 13 EVENTS in differents directions WNW,NW,W,WSW and different year period (Jan-Feb and Aug-sep-oct). 13 different directions and day of the year based on real statistics, but same intensity and interactions. 
-CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES IG TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
+CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES i.e. TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
 Browsing activity is switch on.
 Entire region and 1500y_spinup_20220312 database used, without Pseudotsugo menziesii (Mirb.) Franco.
 CHANGED THE GIS TABLE WITH Environment_20220322.txt
@@ -148,7 +148,7 @@ iLand test for both management system SW and CC 400 years (so transition period)
 In the simulation ARE present Wind Disturbances (wind_400y.txt)
 In the simulation ARE present Bark Beetle Disturbances. 
 Wind 8 EVENTS in differents directions WNW,NW,W,WSW and different year period (Jan-Feb and Aug-sep-oct). 8 different directions and day of the year based on real statistics, but same intensity and interactions. 
-CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES IG TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
+CHANGED THE CZ PNV ALLOMETRIC VARIABLES (FERTIITY OF SOME SPECIES i.e. TILLHYA CORDATA AND ROBINIA PSEUDOACACIA).
 Browsing activity is switch on WITH INTENSITY=1.
 Entire region and 1500y_spinup_20220312 database used, without Pseudotsugo menziesii (Mirb.) Franco.
 CHANGED THE GIS TABLE WITH Environment_20220322.txt
