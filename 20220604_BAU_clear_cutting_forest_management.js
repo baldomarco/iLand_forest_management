@@ -12,6 +12,7 @@ Activities that this script is doing:
 Planting x5 stand treatment programs (stps)
 Thinning x9 x5 stps
 clearcut 
+salvaging cut
  */
 
 
