@@ -345,11 +345,10 @@ Output= wind, bark beetles, carbon, carbon_flows, landscape, dynamicstand, abeUn
 
 ____________________________________________________________________________________________________
 ################                                                                ####################
-################   FIRST RUN WITH THE NEW ENVIRONMENT (BECARFUL IS THE NEW A)   ####################
+################           FIRST RUN WITH THE NEW ENVIRONMENT                   ####################
 ################                                                                ####################
 ################                                                                ####################
 _____________________________________________________________________________________________________
-1c) equal_test6_new_env
 
 New environment and simil test 6
 
