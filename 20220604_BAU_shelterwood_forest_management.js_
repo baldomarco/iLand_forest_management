@@ -19,12 +19,10 @@ Salvaging cut
 //--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 //                                                 ---       P L A N T I N G  ----
 //
-//  At the input file there are columns with the fractions how planting should be done: PlantPiab	PlantAbal	PlantPisy	PlantFasy	PlantLade	PlantBrLf
-//  Values are summing up to 1.  The last one is BrLf means broadleaf, and distributed into acps (40%), frex(30%) and ulgl(30%). 
-//  Defines a fraction 0-1 of 2x2m pixels for which to plant trees of the given species. The `fraction` is interpreted as a probability, i.e. for each 2x2m pixel a random number decides whether to plant or not.
+/  Defines a fraction 0-1 of 2x2m pixels for which to plant trees of the given species. The `fraction` is interpreted as a probability, i.e. for each 2x2m pixel a random number decides whether to plant or not.
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
-//  We are not clearing the existing tree saplings at the site. (clear: false)
+//  We are not clearing the existing tree saplings at the site
 
 // STP1 planting_1 = planting for site 1 - extreme and expose soils - 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
 
