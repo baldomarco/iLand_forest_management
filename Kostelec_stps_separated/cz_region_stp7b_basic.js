@@ -1,6 +1,5 @@
 /*
-###############################################################       SITE 7b waterlock soil STP9       ###########################################################################
-##########################################################                      Clear cut                   ########################################################################
+###############################################################       SITE 7b waterlogged soil group sites STP9 (xlxs)      ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
@@ -26,7 +25,7 @@ Shelterwood (sw) Finalcut (stp10)
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site. (clear: false)
-//  planting_7b = planting for site 7b waterlock soil 100% Alnus glutinosa L. (European alder).
+//  planting_7b = planting for site 7b permanent waterlogged soil sites 100% Alnus glutinosa L. (European alder).
 
 
 var planting_7b = {
