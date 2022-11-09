@@ -1,18 +1,17 @@
 /*
 ################################################################    SITE 1 expose and extreme soil STP1        ###########################################################################
-##########################################################                      Clear cut                   ########################################################################
 
 
-This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
+This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec (CZ) for iLand model.
 MARCO BALDO
 2022/01/07
-We have one agent and one unit. 1 stp: WE PLANT 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine). We used only stp1 with planiting 9 thinning and with a finalcut. clearcut (stp1) shelterwood management (stp2).
+We have one agent and one unit: WE PLANT 80% Quercus petraea ( Sessile oak) and 20% Pinus sylvestris (Scotch pine). We used only stp1 with planiting 9 thinning and with a finalcut. clearcut or shelterwood management.
 This selection was done in preprocess (in R).
 Activities that this script is doing:
 Planting
-Thinning x9 (stp1) with 2 sw times in one rotation period (stp2)
-clearcut (stp1)
-Shelterwood (sw) Finalcut (stp2)
+Thinning x9 (stp1) with 2 sw times in one rotation period.
+Clearcut - finalcut
+Shelterwood - finalcut_sw.
  */
 
 
@@ -26,7 +25,7 @@ Shelterwood (sw) Finalcut (stp2)
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site. (clear: false)
-//  planting_1 = planting for site 1 extreme and expose soils 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
+//  planting_1 = planting for site 1 extreme and expose soils 80% Quercus petraea ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
 
 
 var planting_1 = {
