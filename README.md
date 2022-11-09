@@ -17,7 +17,7 @@ Good results in terms of function and harvest balancing but not in terms of fore
 Output= carbon, carbon_flows, landscape, dynamicstand, abeUnit, runinfo.
 
 ____________________________________________________________________________________
-20220307
+20220309
 
 Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation per site, 
 stems and volume constarins, sustainableHarvest=1.
