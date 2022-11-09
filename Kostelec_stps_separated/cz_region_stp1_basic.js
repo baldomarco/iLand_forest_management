@@ -9,7 +9,7 @@ We have one agent and one unit: WE PLANT 80% Quercus petraea ( Sessile oak) and 
 This selection was done in preprocess (in R).
 Activities that this script is doing:
 Planting
-Thinning x9 (stp1) with 2 sw times in one rotation period.
+Thinning x9 in case shelterwood management 2 sw thinning before the final cut at the end of rotation.
 Clearcut - finalcut
 Shelterwood - finalcut_sw.
  */
