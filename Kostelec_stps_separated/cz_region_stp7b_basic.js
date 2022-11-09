@@ -44,7 +44,7 @@ var planting_7b = {
 
 // http://iland-model.org/ABE+activity+thinning
 // For thinnings there are build in method in the Bilek L., excel file, and we use it. Stand top height and dbh variable CHANGE DURING THE ACTIVITY/AGE
-// WE ARE USING THE METHOD_1_STP9 -> 7b IS THE KIND OF SOIL (waterlock Alder type SITES). 
+// WE ARE USING THE METHOD_1_STP9 -> 7b IS THE KIND OF SOIL (permanent waterlogged Alder type group SITES). 
 // (only for shelterwood) WE ARE USING SHELTERWOOD MANAGEMENT FOR LAST THINNING
 // VARIANT FOR NUMBER OF STEMS REMAINING AND WITHOUT HEIGHT CONSTRAINS + volume target
 // For stams constrains I put 5 trees in more of the target because was > of some n. i.g. thin 71b -> stems n. > 700 = remainingStems: 705
