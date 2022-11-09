@@ -875,16 +875,145 @@ xml
 </user>
 
 
+_________________________________________________________________________________________
+20220512_salv_test
+*** CLIMATE CHANGE ***
+***  BROWSING  ***
+*** SW10  as the official management ***
+*** HERE WE test SALVAGING MANAGEMENT ***
+
+Years of simulation 400y
+Climate changes is in the database 0 and +4 
+Disturbance: wind_example_big_5.txt ***
+Browsing tables from Ausria. Browsing 1
+DB: species parameters: species_param_europe_allometry_20190521_CZ.sqlite 
+DB climate: reference: CZ_region_1961-2018_20211208f.sqlite and +4degree
+Salvaging 20% at the end of the project file
+
+_________________________________________________________________________________________
+SAL_02_1
+
+Salvage 20% of total volume - in 100% impacted volume stand - make clear cut in that case
+debugSplit: false,
+	 thresholdIgnoreDamage: 100, // modified, WR: was 100000  above this threshold clearing and splitting is tested
+	 thresholdClearStand: 1.0,  // This is the % of the demaged area in a stand. We can change it based on what we want. added WR  if the relative damage is higher than this, it is cleared
+	 thresholdSplitStand: 1.0,   // added WR (no splitting=1, if 0.5 at 50% demaged area we split the stand based on demaged - no demaged area)   if this is smaller than the clearstand, it is splitted if rel.damage higher than this value
+_________________________________________________________________________________________
+SAL_02_07
+
+debugSplit: false,
+	 thresholdIgnoreDamage: 100, // modified, WR: was 100000  above this threshold clearing and splitting is tested
+	 thresholdClearStand: 0.70,  // This is the % of the demaged area in a stand. We can change it based on what we want. added WR  if the relative damage is higher than this, it is cleared
+	 thresholdSplitStand: 1.0,   // added WR (no splitting=1, if 0.5 at 50% demaged area we split the stand based on demaged - no demaged area)   if this is smaller than the clearstand, it is splitted if rel.damage higher than this value
+_________________________________________________________________________________________
+SAL_02_07_false (is not activated in the project file)
+
+debugSplit: false,
+	 thresholdIgnoreDamage: 100, // modified, WR: was 100000  above this threshold clearing and splitting is tested
+	 thresholdClearStand: 0.70,  // This is the % of the demaged area in a stand. We can change it based on what we want. added WR  if the relative damage is higher than this, it is cleared
+	 thresholdSplitStand: 1.0,   // added WR (no splitting=1, if 0.5 at 50% demaged area we split the stand based on demaged - no demaged area)   if this is smaller than the clearstand, it is splitted if rel.damage higher than this value
 
 
+_________________________________________________________________________________________
+20220604_final_test
+********THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
+*** CLIMATE CHANGE ***
+***  BROWSING  ***
+*** SW10  as the official management ***
+*** SALVAGING MANAGEMENT ***
+*** EXCEL "test_manuscript_grid.xlsx" ***
+*** EXCEL "variable_all.xlsx" ***
 
 
+Years of simulation 300 ***
+Climate changes is in the database (LOOK AT DATABASE AND EXCEL "test_manuscript_grid.xlsx")
+Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation based on site. We used stems and volume constarins. 
+In the simulation ARE present Wind Disturbances (wind_example_random.txt) big 10 event.
+We changed the BROWSING PROBABILIY of Acer spp (mapples) as the Quercus spp (oaks) 0.73 ***
+Disturbance: wind_example_random_final.txt ***
+Browsing tables from CZ. Browsing 0 / 0.5 / 1 / 2 / tot (look the DB species)
+DB: species parameters: species_param_europe_allometry_20220603_CZ.sqlite  and   species_param_europe_allometry_20220603_brow_tot_CZ.sqlite
+DB climate: reference: and T+1 / T+3 / T+5 and Precipitation Pr+10% / reference Pr0 / Pr-10%
+Salvaging 20% at the end of the project file
 
+_________________________________________________________________________________________
+________________________________________________________________________________________
+20221103 - Forest Recovery after disturbances (wind and bark beetles, and anthropogenic disturbance for harvest)
 
+******** THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
+*** REFERENCE 1961-2018 CLIMATE ***
+***  BROWSING  ***
+*** SW10  as the official management ***
+*** SALVAGING MANAGEMENT ***
 
+Years of simulation 300 ***
+Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation based on site. We used stems and volume constarins. 
+In the simulation ARE present Wind Disturbances (wind10.txt; .... wind110.txt) 1 big event recorring at the year 10; ... 110. Then blocks of little events repeting them exaclty at then same time in every different simulation. See the tables. Random EVENTS in differents directions WNW,NW,W,WSW. 
+In the simulation ARE present Bark Beetle Disturbances, initial infestation 0.001
+Browsing INTENSITY PRESSURE is switch on = 1 
+Entire region and 1500y_spinup_snapshot.sqlite database used, without Pseudotsugo menziesii (Mirb.) Franco.
+CHANGED THE GIS TABLE WITH Environment_20220404.txt
+Precipitation ARE NORMAL MODEL <precipitation> = 1
+***CO2 levels:
 
+<CO2Response>
+        <p0>1</p0>
+        <baseConcentration>380</baseConcentration>
+        <compensationPoint>80</compensationPoint>
+        <beta0>0.3</beta0>
+      </CO2Response>
+      
+ <climate>
+      <co2concentration>367</co2concentration>
+	  <tableName>CLIM1</tableName>
+      <batchYears>58</batchYears> 
+	  <temperatureShift>0</temperatureShift>
+	  <precipitationShift>1</precipitationShift>
+	  <randomSamplingEnabled>true</randomSamplingEnabled>
+<randomSamplingList>9,6,8,16,4,3,10,8,6,8,0,4,12,27,10,28,4,11,24,15,6,29,19,13,21,11,22,22,1,9,0,22,4,27,18,9,25,24,23,29,29,2,16,15,29,16,14,5,3,16,22,13,14,8,27,12,17,11,28,18,21,10,11,0,10,17,27,7,21,3,17,26,1,19,18,11,6,6,17,13,0,0,16,20,1,19,4,15,16,12,7,10,5,5,18,11,0,24,0,27,21,28,25,19,12,11,14,26,23,11,24,7,15,15,13,8,17,26,24,10,4,8,21,0,3,22,20,2,6,3,16,9,4,25,18,20,28,29,3,4,6,6,25,7,13,29,2,8,12,17,6,3,2,22,28,10,20,17,4,0,0,15,14,8,20,19,16,14,1,16,11,9,14,22,21,8,1,2,10,18,28,24,19,10,10,13,20,23,6,29,28,6,13,9,15,1,4,29,2,2,29,28,23,0,6,24,14,18,13,28,12,3,14,27,20,13,14,14,29,28,26,29,25,4,3,14,27,1,12,16,27,18,7,3,29,13,25,6,14,20,21,2,7,5,20,20,8,27,12,21,26,29,26,20,28,21,18,4,7,24,21,16,3,1,25,29,6,23,28,28,20,19,21,28,19,16,19,29,5,24,4,13,24,6,23,3,8,23,18,1,6,19,6,12,7,11,24,22,5,2</randomSamplingList> <!-- random sample of the last predicted 30 years at the end of the climate change scenario -->
+	  <filter></filter> <!-- year>2012 -->
+    </climate>
 
+_________________________________________________________________________________________
+________________________________________________________________________________________
+20221109 - Forest Recovery after disturbances (wind and bark beetles, and anthropogenic disturbance for harvest)
 
+******** THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
+*** REFERENCE 1961-2018 CLIMATE ***
+***  BROWSING  ***
+*** SW10  as the official management ***
+*** SALVAGING MANAGEMENT ***
 
+Years of simulation 300 ***
+Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation based on site. We used stems and volume constarins. 
+In the simulation ARE present Wind Disturbances (wind10.txt; .... wind110.txt) 1 big event recurrent at the year 10; 30; ... 110. Random little EVENTS in differents directions WNW,NW,W,WSW, random period and wind speed, consistent for every runs. 
+In the simulation ARE present Bark Beetle Disturbances, initial infestation:
 
+<initialInfestationProbability>0.000685</initialInfestationProbability> <!-- p that a potential host pixel is infested at startup (as a result of pre-simulation dynamics), increase it in case of warming -->	
+		<referenceClimate>
+		
+		
+Browsing INTENSITY PRESSURE is switch on = 0.7
+Entire region and 1500y_spinup_snapshot.sqlite database used, without Pseudotsugo menziesii (Mirb.) Franco.
+CHANGED THE GIS TABLE WITH Environment_20220404.txt
+Precipitation ARE NORMAL MODEL <precipitation> = 1
 
+***CO2 levels:
+
+<CO2Response>
+        <p0>1</p0>
+        <baseConcentration>356</baseConcentration>
+        <compensationPoint>80</compensationPoint>
+        <beta0>0.3</beta0>
+      </CO2Response>
+      
+<climate>
+      <co2concentration>356</co2concentration>
+	  <tableName>CLIM1</tableName>
+      <batchYears>58</batchYears> 
+	  <temperatureShift>0</temperatureShift>
+	  <precipitationShift>1</precipitationShift>
+	  <randomSamplingEnabled>true</randomSamplingEnabled>
+<randomSamplingList>9,6,8,16,4,3,10,8,6,8,0,4,12,27,10,28,4,11,24,15,6,29,19,13,21,11,22,22,1,9,0,22,4,27,18,9,25,24,23,29,29,2,16,15,29,16,14,5,3,16,22,13,14,8,27,12,17,11,28,18,21,10,11,0,10,17,27,7,21,3,17,26,1,19,18,11,6,6,17,13,0,0,16,20,1,19,4,15,16,12,7,10,5,5,18,11,0,24,0,27,21,28,25,19,12,11,14,26,23,11,24,7,15,15,13,8,17,26,24,10,4,8,21,0,3,22,20,2,6,3,16,9,4,25,18,20,28,29,3,4,6,6,25,7,13,29,2,8,12,17,6,3,2,22,28,10,20,17,4,0,0,15,14,8,20,19,16,14,1,16,11,9,14,22,21,8,1,2,10,18,28,24,19,10,10,13,20,23,6,29,28,6,13,9,15,1,4,29,2,2,29,28,23,0,6,24,14,18,13,28,12,3,14,27,20,13,14,14,29,28,26,29,25,4,3,14,27,1,12,16,27,18,7,3,29,13,25,6,14,20,21,2,7,5,20,20,8,27,12,21,26,29,26,20,28,21,18,4,7,24,21,16,3,1,25,29,6,23,28,28,20,19,21,28,19,16,19,29,5,24,4,13,24,6,23,3,8,23,18,1,6,19,6,12,7,11,24,22,5,2</randomSamplingList> <!-- random sample of the last predicted 30 years at the end of the climate change scenario -->
+	  <filter></filter> <!-- year>2012 -->
+    </climate>
