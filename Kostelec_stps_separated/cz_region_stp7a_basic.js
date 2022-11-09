@@ -1,12 +1,11 @@
 /*
 ###############################################################   SITE 7a partially waterlock soil STP7        ###########################################################################
-##########################################################                      Clear cut                          #################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
 MARCO BALDO
 2022/01/07
-We have one agent and one unit. 1 stp: WE PLANT 60% Picea abies L. (Norway Sprunce) and 40% Quercus petra L. (Sessile Oak). We used only stp7 with planiting 9 thinning and with a finalcut. clearcut (stp7) shelterwood management (stp8).
+We have one agent and one unit. 1 stp: WE PLANT 60% Picea abies L. (Norway Sprunce) and 40% Quercus petraea L. (Sessile Oak). We used only stp7 with planiting 9 thinning and with a finalcut. clearcut (stp7) shelterwood management (stp8).
 This selection was done in preprocess (in R).
 Activities that this script is doing:
 Planting
