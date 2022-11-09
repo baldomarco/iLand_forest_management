@@ -1,5 +1,5 @@
 /*
-################################################################    SITE 1 expose and extreme sites of group STP1        ###########################################################################
+################################################################    SITE 1 expose and extreme group of sites STP1        ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec (CZ) for iLand model.
