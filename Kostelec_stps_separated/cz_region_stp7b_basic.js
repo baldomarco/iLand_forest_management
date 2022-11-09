@@ -1,5 +1,5 @@
 /*
-###############################################################       SITE 7b permanent waterlogged soil group sites STP9 (xlxs)      ###########################################################################
+###############################################################       SITE 7b permanent waterlogged soil group of sites STP9 (xlxs)      ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
