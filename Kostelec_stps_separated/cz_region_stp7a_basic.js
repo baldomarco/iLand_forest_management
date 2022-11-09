@@ -1,5 +1,5 @@
 /*
-###############################################################   SITE 7a partially waterlock soil STP7        ###########################################################################
+###############################################################   SITE 7a partially waterlogged soil group sites STP7  (xlxs) ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
@@ -25,7 +25,7 @@ Shelterwood (sw) Finalcut (stp8)
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site. (clear: false)
-//  planting_7a = planting for site 7a partially waterlock soil 60% Picea abies L. (Norway sprunce) and 40% Quercus petra L. (Sessile oak).
+//  planting_7a = planting for site 7a partially waterlogged soil 60% Picea abies L. (Norway sprunce) and 40% Quercus petraea L. (Sessile oak).
 
 
 var planting_7a = {
@@ -46,7 +46,7 @@ var planting_7a = {
 
 // http://iland-model.org/ABE+activity+thinning
 // For thinnings there are build in method in the Bilek L., excel file, and we use it. Stand top height and dbh variable CHANGE DURING THE ACTIVITY/AGE
-// WE ARE USING THE METHOD_1_STP7 -> 7a IS THE KIND OF SOIL (partially waterlock oak type SITES). 
+// WE ARE USING THE METHOD_1_STP7 -> 7a IS THE KIND OF SOIL (partially waterlogged oak type SITES). 
 // (only for shelterwood) WE ARE USING SHELTERWOOD MANAGEMENT FOR LAST THINNING
 // VARIANT FOR NUMBER OF STEMS REMAINING AND WITHOUT HEIGHT CONSTRAINS + volume target 
 // For stams constrains I put 5 trees in more of the target because was > of some n. i.g. thin 71a -> stems n. > 1500 = remainingStems: 1505
