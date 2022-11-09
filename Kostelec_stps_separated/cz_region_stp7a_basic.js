@@ -1,5 +1,5 @@
 /*
-###############################################################   SITE 7a partially waterlogged soil group sites STP7  (xlxs) ###########################################################################
+###############################################################   SITE 7a partially waterlogged soil group of sites STP7  (xlxs) ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
