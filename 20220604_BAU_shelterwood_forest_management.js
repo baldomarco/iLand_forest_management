@@ -1,8 +1,8 @@
 /*
-################################################################    Kostelec Czech Silviculture Management     ###########################################################################
-##########################################################                      Shalterwood Cut                         ########################################################################
-                                                                 NEW MANAGEMENT TO INCREASE SPRUCE PROPORTION
-                                                                                      TEST SW10
+################################################################    Kostelec Silviculture Management     ###########################################################################
+##########################################################                   Shelterwood                         ###################################################################
+                                                                              TEST SW10 (*)
+									      
 This management script is doing businness-as-usual activities on the full landscape of our study area in Kostelec for iLand model.
 MARCO BALDO
 2022/04/12
@@ -24,7 +24,7 @@ Salvaging cut
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site
 
-// STP1 planting_1 = planting for site 1 - extreme and expose soils - 80% Quercus petreae ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
+// STP1 planting_1 = planting for site 1 - extreme and expose soil sites - 80% Quercus petraea ( Sessile oak) and 20% Pinus sylvestris (Scotch pine).
 
 
 var planting_1 = {
@@ -38,7 +38,7 @@ var planting_1 = {
     			     	fmengine.log("Planting pisy fraction= 0.2" ); }
 };
 
-// STP2  planting_3 = planting for site 3 - acidic soils - 40% Quercus petreae L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
+// STP2  planting_3 = planting for site 3 - acidic soil sites - 40% Quercus petraea L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
 
 
 var planting_3 = {
@@ -52,7 +52,7 @@ var planting_3 = {
     			     	fmengine.log("Planting qupe fraction= 0.4" ); }
 };
 
-// STP3 planting_5 = planting for site 5 - rich soils - 60% Picea abies L. (Norway sprunce) and 40% Fagus sylvatica L. (European beech).
+// STP3 planting_5 = planting for site 5 - rich soil sites - 60% Picea abies L. (Norway sprunce) and 40% Fagus sylvatica L. (European beech).
 
 
 var planting_5 = {
@@ -66,7 +66,7 @@ var planting_5 = {
     			     	fmengine.log("Planting fasy fraction= 0.4" ); }
 };
 
-// STP4 planting_7a = planting for site 7a - partially waterlock soil - 60% Picea abies L. (Norway sprunce) and 40% Quercus petra L. (Sessile oak).
+// STP4 planting_7a = planting for site 7a - partially waterlogged soil sites - 60% Picea abies L. (Norway sprunce) and 40% Quercus petraea L. (Sessile oak).
 
 
 var planting_7a = {
@@ -80,7 +80,7 @@ var planting_7a = {
     			     	fmengine.log("Planting qupe fraction= 0.4" ); }
 };
 
-// STP5 planting_7b = planting for site 7b - waterlock soil - 100% Alnus glutinosa L. (European alder).
+// STP5 planting_7b = planting for site 7b - permanent waterlogged soil sites - 100% Alnus glutinosa L. (European alder).
 
 
 var planting_7b = {
