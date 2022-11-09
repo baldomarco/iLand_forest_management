@@ -1,5 +1,5 @@
 /*
-####################################################################     SITE 3 acidic soil group sites STP3        ###########################################################################
+####################################################################     SITE 3 acidic soil group of sites STP3        ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
