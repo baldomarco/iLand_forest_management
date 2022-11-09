@@ -1,12 +1,11 @@
 /*
-####################################################################     SITE 3 acidic soil STP3        ###########################################################################
-##########################################################                      Clear cut                   ########################################################################
+####################################################################     SITE 3 acidic soil group sites STP3        ###########################################################################
 
 
 This management script is doing businness-as-usual activities on the full landscape of our study area in the Kostelec for iLand model.
 MARCO BALDO
 2022/01/07
-We have one agent and one unit. 1 stp: WE PLANT 40% Quercus petreae L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine). We used only stp3 with planiting 9 thinning and with a finalcut. clearcut (stp3) shelterwood management (stp4).
+We have one agent and one unit. 1 stp: WE PLANT 40% Quercus petraea L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine). We used only stp3 with planiting 9 thinning and with a finalcut. clearcut (stp3) shelterwood management (stp4).
 This selection was done in preprocess (in R).
 Activities that this script is doing:
 Planting
@@ -26,7 +25,7 @@ Shelterwood (sw) Finalcut (stp4)
 //  Planting is in 2nd year of every rotation (schedule: 2 )
 //  50 cm high trees are planted wall to wall
 //  We are not clearing the existing tree saplings at the site. (clear: false)
-//  planting_3 = planting for site 3 acidic soils 40% Quercus petreae L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
+//  planting_3 = planting for site 3 acidic soils 40% Quercus petraea L. ( Sessile oak) and 60% Pinus sylvestris L. (Scotch pine).
 
 
 var planting_3 = {
