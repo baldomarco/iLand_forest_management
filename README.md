@@ -978,7 +978,13 @@ CHANGED THE GIS TABLE WITH Environment_20220404.txt
 Precipitation ARE NORMAL MODEL <precipitation> = 1
 
 ***CO2 levels: 356 ppm (avg period 1961-2018)
-
+			
+________________________________________________________________________________________
+20221112 - TEST CONTROL BITE - MASTODON AND CAPREOULUS (ROE DEER)
+			/
+			/
+			/
+			/
 ________________________________________________________________________________________
 20221112 - Forest Recovery after disturbances - Test to focus the productivity rate
 
