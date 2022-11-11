@@ -916,7 +916,7 @@ debugSplit: false,
 
 _________________________________________________________________________________________
 20220604_final_test
-********THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
+********THIS IS THE MOST IMPORTANT FROM HERE COMES THE DB and OUTPUTS OF THE BROWSING PAPER *******
 *** CLIMATE CHANGE ***
 ***  BROWSING  ***
 *** SW10  as the official management ***
@@ -940,10 +940,9 @@ ________________________________________________________________________________
 ________________________________________________________________________________________
 20221103 - Forest Recovery after disturbances (wind and bark beetles, and anthropogenic disturbance for harvest)
 
-******** THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
 *** REFERENCE 1961-2018 CLIMATE ***
-***  BROWSING  ***
-*** SW10  as the official management ***
+***  BROWSING  Reference***
+*** Shelterwood n10  as the official management ***
 *** SALVAGING MANAGEMENT ***
 
 Years of simulation 300 ***
@@ -951,37 +950,18 @@ Java scripts inherent the management activities 5 stps, optimum rotation period 
 In the simulation ARE present Wind Disturbances (wind10.txt; .... wind110.txt) 1 big event recorring at the year 10; ... 110. Then blocks of little events repeting them exaclty at then same time in every different simulation. See the tables. Random EVENTS in differents directions WNW,NW,W,WSW. 
 In the simulation ARE present Bark Beetle Disturbances, initial infestation 0.001
 Browsing INTENSITY PRESSURE is switch on = 1 
-Entire region and 1500y_spinup_snapshot.sqlite database used, without Pseudotsugo menziesii (Mirb.) Franco.
+Entire region and 1500y_spinup_snapshot.sqlite database used for the spin up of the study area simulated.
 CHANGED THE GIS TABLE WITH Environment_20220404.txt
 Precipitation ARE NORMAL MODEL <precipitation> = 1
-***CO2 levels:
-
-<CO2Response>
-        <p0>1</p0>
-        <baseConcentration>380</baseConcentration>
-        <compensationPoint>80</compensationPoint>
-        <beta0>0.3</beta0>
-      </CO2Response>
-      
- <climate>
-      <co2concentration>367</co2concentration>
-	  <tableName>CLIM1</tableName>
-      <batchYears>58</batchYears> 
-	  <temperatureShift>0</temperatureShift>
-	  <precipitationShift>1</precipitationShift>
-	  <randomSamplingEnabled>true</randomSamplingEnabled>
-<randomSamplingList>9,6,8,16,4,3,10,8,6,8,0,4,12,27,10,28,4,11,24,15,6,29,19,13,21,11,22,22,1,9,0,22,4,27,18,9,25,24,23,29,29,2,16,15,29,16,14,5,3,16,22,13,14,8,27,12,17,11,28,18,21,10,11,0,10,17,27,7,21,3,17,26,1,19,18,11,6,6,17,13,0,0,16,20,1,19,4,15,16,12,7,10,5,5,18,11,0,24,0,27,21,28,25,19,12,11,14,26,23,11,24,7,15,15,13,8,17,26,24,10,4,8,21,0,3,22,20,2,6,3,16,9,4,25,18,20,28,29,3,4,6,6,25,7,13,29,2,8,12,17,6,3,2,22,28,10,20,17,4,0,0,15,14,8,20,19,16,14,1,16,11,9,14,22,21,8,1,2,10,18,28,24,19,10,10,13,20,23,6,29,28,6,13,9,15,1,4,29,2,2,29,28,23,0,6,24,14,18,13,28,12,3,14,27,20,13,14,14,29,28,26,29,25,4,3,14,27,1,12,16,27,18,7,3,29,13,25,6,14,20,21,2,7,5,20,20,8,27,12,21,26,29,26,20,28,21,18,4,7,24,21,16,3,1,25,29,6,23,28,28,20,19,21,28,19,16,19,29,5,24,4,13,24,6,23,3,8,23,18,1,6,19,6,12,7,11,24,22,5,2</randomSamplingList> <!-- random sample of the last predicted 30 years at the end of the climate change scenario -->
-	  <filter></filter> <!-- year>2012 -->
-    </climate>
+***CO2 levels: 380 ppm (avg period 1961-2018)
 
 _________________________________________________________________________________________
 ________________________________________________________________________________________
 20221109 - Forest Recovery after disturbances (wind and bark beetles, and anthropogenic disturbance for harvest)
 
-******** THIS IS THE MOST IMPORTANT FORM HERE COMES OUTPUTS OF THE BROWSING PAPER *******
 *** REFERENCE 1961-2018 CLIMATE ***
-***  BROWSING  ***
-*** SW10  as the official management ***
+***  BROWSING  0.7 ***
+*** Shelterwood BAU n10  as the official management ***
 *** SALVAGING MANAGEMENT ***
 
 Years of simulation 300 ***
@@ -991,29 +971,35 @@ In the simulation ARE present Bark Beetle Disturbances, initial infestation:
 
 <initialInfestationProbability>0.000685</initialInfestationProbability> <!-- p that a potential host pixel is infested at startup (as a result of pre-simulation dynamics), increase it in case of warming -->	
 		<referenceClimate>
-		
-		
+
 Browsing INTENSITY PRESSURE is switch on = 0.7
-Entire region and 1500y_spinup_snapshot.sqlite database used, without Pseudotsugo menziesii (Mirb.) Franco.
+Entire region and 1500y_spinup_snapshot.sqlite database used for the spin up of the study area simulated.
 CHANGED THE GIS TABLE WITH Environment_20220404.txt
 Precipitation ARE NORMAL MODEL <precipitation> = 1
 
-***CO2 levels:
+***CO2 levels: 356 ppm (avg period 1961-2018)
 
-<CO2Response>
-        <p0>1</p0>
-        <baseConcentration>356</baseConcentration>
-        <compensationPoint>80</compensationPoint>
-        <beta0>0.3</beta0>
-      </CO2Response>
-      
-<climate>
-      <co2concentration>356</co2concentration>
-	  <tableName>CLIM1</tableName>
-      <batchYears>58</batchYears> 
-	  <temperatureShift>0</temperatureShift>
-	  <precipitationShift>1</precipitationShift>
-	  <randomSamplingEnabled>true</randomSamplingEnabled>
-<randomSamplingList>9,6,8,16,4,3,10,8,6,8,0,4,12,27,10,28,4,11,24,15,6,29,19,13,21,11,22,22,1,9,0,22,4,27,18,9,25,24,23,29,29,2,16,15,29,16,14,5,3,16,22,13,14,8,27,12,17,11,28,18,21,10,11,0,10,17,27,7,21,3,17,26,1,19,18,11,6,6,17,13,0,0,16,20,1,19,4,15,16,12,7,10,5,5,18,11,0,24,0,27,21,28,25,19,12,11,14,26,23,11,24,7,15,15,13,8,17,26,24,10,4,8,21,0,3,22,20,2,6,3,16,9,4,25,18,20,28,29,3,4,6,6,25,7,13,29,2,8,12,17,6,3,2,22,28,10,20,17,4,0,0,15,14,8,20,19,16,14,1,16,11,9,14,22,21,8,1,2,10,18,28,24,19,10,10,13,20,23,6,29,28,6,13,9,15,1,4,29,2,2,29,28,23,0,6,24,14,18,13,28,12,3,14,27,20,13,14,14,29,28,26,29,25,4,3,14,27,1,12,16,27,18,7,3,29,13,25,6,14,20,21,2,7,5,20,20,8,27,12,21,26,29,26,20,28,21,18,4,7,24,21,16,3,1,25,29,6,23,28,28,20,19,21,28,19,16,19,29,5,24,4,13,24,6,23,3,8,23,18,1,6,19,6,12,7,11,24,22,5,2</randomSamplingList> <!-- random sample of the last predicted 30 years at the end of the climate change scenario -->
-	  <filter></filter> <!-- year>2012 -->
-    </climate>
+________________________________________________________________________________________
+20221112 - Forest Recovery after disturbances - Test to focus the productivity rate
+
+*** REFERENCE 1961-2018 CLIMATE ***
+***  BROWSING  0.7 or absent ***
+*** Shelterwood BAU n10  as the official management ***
+*** SALVAGING MANAGEMENT ***
+*** Different Disturbance Rate ***
+
+Years of simulation 300 ***
+Java scripts inherent the management activities 5 stps, optimum rotation period and silviculture plantation based on site. We used stems and volume constarins. 
+Yes-Not/ In the simulation when present Wind Disturbances only wind10.txt and wind90.txt. 1 big event recurrent at the year 10 and 90. Random little EVENTS in differents directions WNW,NW,W,WSW, random period and wind speed, consistent for every runs. 
+Yes-not/ In the simulation ARE present the Bark Beetle Disturbances only in the one without browsing and with only brak beetle dist.
+
+<initialInfestationProbability>0.000685</initialInfestationProbability> <!-- p that a potential host pixel is infested at startup (as a result of pre-simulation dynamics), increase it in case of warming -->	
+		<referenceClimate>
+		
+		
+Browsing INTENSITY PRESSURE is switch on = 0.7
+Entire region and 1500y_spinup_snapshot.sqlite database used for the spin up of the study area simulated.
+CHANGED THE GIS TABLE WITH Environment_20220404.txt
+Precipitation ARE NORMAL MODEL <precipitation> = 1
+
+***CO2 levels: 356 ppm (avg period 1961-2018)
