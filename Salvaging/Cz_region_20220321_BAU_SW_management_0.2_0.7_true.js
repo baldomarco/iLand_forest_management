@@ -94,6 +94,38 @@ var planting_7b = {
 	 onExit: function() { 	fmengine.log("Planting alql fraction= 1" ); }
 };
 
+//--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+//                                                      ---  S A L V A G I N G  --->
+
+
+var salvager_sw = { type: 'salvage',  schedule: { repeat: true },
+     disturbanceCondition: "dbh>10 and rnd(0,1)<"+Globals.setting('user.salvage.remove'),    // this part connect the js at the xml + this +Globals.setting('user.salvage.remove' is for calling where in the modules of the xml)
+     onExecute: function() {
+		 // when stand is cleared... WE DO NOT DO CLEARING
+		 trees.loadAll();
+
+		 trees.harvest("dbh>5"); 
+		  
+                   fmengine.log("Remained after disturbance: " + trees.count + " normal trees");
+                  var n = trees.killSaplings('');
+                  fmengine.log("Plus remained: " + n + " saplings");
+                 //trees.killSaplings("");
+                fmengine.log("We do not do harvest, and clearing, one RESET")
+
+               // fmengine.runActivity(stand.id, "planting"); // assuming the name of the activity is "planting"      
+               //  fmengine.log("PLANTING AFTER RESET");
+		       //stand.trace = true; // enable tracing ...
+			stand.U = 120;   // stand.U is for the rotation time restarting after the salvaging
+	 },
+
+	 debugSplit: true,
+	 thresholdIgnoreDamage: 100, // modified, WR: was 100000  above this threshold clearing and splitting is tested
+	 thresholdClearStand: 0.7,  // This is the % of the demaged area in a stand. We can change it based on what we want. added WR  if the relative damage is higher than this, it is cleared
+	 thresholdSplitStand: 1.0,   // added WR (no splitting=1, if 0.5 at 50% demaged area we split the stand based on demaged - no demaged area)   if this is smaller than the clearstand, it is splitted if rel.damage higher than this value
+
+    }	
+
+
 
 //--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 //                                                      ---  T H I N N I N G S  --->   
